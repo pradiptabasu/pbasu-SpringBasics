@@ -50,3 +50,14 @@ dependencies {
 }
 
 
+
+* https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
+* https://www.baeldung.com/maven-directory-structure
+* https://examples.javacodegeeks.com/enterprise-java/maven/maven-project-structure-example/
+* http://www.java2s.com/Tutorials/Java/Maven_Tutorial/1030__Maven_Directory_Structure.htm
+* 
+* 
+* 
+* 
+* 
+* 
