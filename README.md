@@ -60,4 +60,23 @@ dependencies {
 * 
 * 
 * 
+
+
+### demo with Spring Boot + AngularJS + Flyway + PostgreSQL + Docker
+=================================================================================
+
+* https://github.com/aksakalli/todo-spring-angular
+* https://springbootdev.com/2018/01/08/docker-spring-boot-and-spring-data-jpa-mysql-rest-api-example-with-docker-with-docker-compose/
+* https://examples.javacodegeeks.com/enterprise-java/spring/boot/spring-boot-and-angularjs-integration-tutorial/
+* https://github.com/hantsy/angularjs-springmvc-sample-boot
+* https://github.com/aranga-nana/angular-spring-boot-micro-services-docker
+* https://github.com/g00glen00b/ng-spring-boot
+* https://github.com/datvv/Spring-Boot-AngularJS-Spring-Data-JPA-CRUD-App-Example
+* https://github.com/spring-projects/spring-petclinic
+* https://www.tutorialspoint.com/spring/spring_bean_definition_inheritance.htm
+* 
+* 
+* 
+* 
+* 
 * 
