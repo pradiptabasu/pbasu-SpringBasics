@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<bean id="fruit" class="com.pbasu.simple.Fruits"/>
+	<bean id="fruitWithName" class="com.pbasu.simple.Fruits">
+		<constructor-arg index="0" value="Apple"/>
+	</bean>
+	
+	<bean id="vegetable" class="com.pbasu.simple.Vegetable"/>
+	<bean id="vegetableWithName" class="com.pbasu.simple.Vegetable">
+		<property name="myName" value="Potato"/>
+	</bean>
+	
+	<bean id="fruitWithList" class="com.pbasu.simple.Fruits">
+		<property name="fruitNameList">
+			<list>
+				<value>Banana</value>
+				<value>Orange</value>
+				<value>Grapes</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="fruitWithMap" class="com.pbasu.simple.Fruits">
+		<property name="fruitNameMap">
+			<map>
+				<entry key="Banana" value="Yellow"></entry>
+				<entry key="Orange" value="Saffron"></entry>
+				<entry key="Grapes" value="Purple"></entry>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="fruitWithListAndMap" class="com.pbasu.simple.Fruits">
+		<property name="fruitNameList">
+			<list>
+				<value>Banana</value>
+				<value>Orange</value>
+				<value>Grapes</value>
+			</list>
+		</property>
+		<property name="fruitNameMap">
+			<map>
+				<entry key="Banana" value="Yellow"></entry>
+				<entry key="Orange" value="Saffron"></entry>
+				<entry key="Grapes" value="Purple"></entry>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="vegetableUsingPnamespace" class="com.pbasu.simple.Vegetable" p:myName="Tomato via P-namespace"/>
+	
+	<bean id="vegetableMeal" class="com.pbasu.simple.Vegetable"/>
+	<bean id="fruitsMeal" class="com.pbasu.simple.Fruits"/>
+	<bean id="dairyMeal" class="com.pbasu.simple.Dairy"/>
+	<bean id="grainsMeal" class="com.pbasu.simple.Grains" init-method="myInitMethod" destroy-method="myDestroyMethod"/>
+	<bean id="meatMeal" class="com.pbasu.simple.Meat"/>
+	
+	<bean id="meal" class="com.pbasu.simple.Meal">
+		<property name="fruit" ref="fruitsMeal"/>
+		<property name="vegetable" ref="vegetableMeal"/>
+		<property name="meat" ref="meatMeal"/>
+		<property name="dairy" ref="dairyMeal"/>
+		<property name="grain" ref="grainsMeal"/>
+	</bean>
+	
+	<bean id="mealWithConstructorInjection" class="com.pbasu.simple.Meal">
+		<constructor-arg index="0" ref="fruitsMeal"/>
+		<constructor-arg index="1" ref="vegetableMeal"/>
+		<constructor-arg index="2" ref="meatMeal"/>
+		<constructor-arg index="3" ref="dairyMeal"/>
+		<constructor-arg index="4" ref="grainsMeal"/>
+	</bean>
+	
+	<bean id="mealWithConstructorInjectionByName" class="com.pbasu.simple.Meal">
+		<constructor-arg name="fruit" ref="fruitsMeal"/>
+		<constructor-arg name="vegetable" ref="vegetableMeal"/>
+		<constructor-arg name="meat" ref="meatMeal"/>
+		<constructor-arg name="dairy" ref="dairyMeal"/>
+		<constructor-arg name="grain" ref="grainsMeal"/>
+	</bean>
+	
+	<!-- classpath ..... points to java/main/resources -->
+	<!--<context:property-placeholder location="classpath:myApplicationProps.properties"/>-->
+	<!-- normal location always starts at project's root i.e. where pom.xml is in this case -->
+	<!--<context:property-placeholder location="src/main/java/myApplicationProps.properties"/>-->
+	<!--<context:property-placeholder location="myApplicationProps.properties"/>-->
+	<context:property-placeholder location="src/main/java/com/pbasu/configFiles/myApplicationProps.properties"/>
+	
+	<bean id="seaFood" class="com.pbasu.simple.SeaFood"/>
+	<bean id="seaFoodExternalProperty" class="com.pbasu.simple.SeaFood">
+		<property name="myDefination" value="${def-SeaFood}"/>
+	</bean>
+	
+		<bean id="mealWithInnerOuterBean" class="com.pbasu.simple.Meal">
+		<property name="fruit">
+			<bean id="fruitWithList" class="com.pbasu.simple.Fruits">
+				<property name="fruitNameList">
+					<list>
+						<value>Banana</value>
+						<value>Orange</value>
+						<value>Grapes</value>
+					</list>
+				</property>
+			</bean>
+		</property>
+		<property name="vegetable">
+			<bean id="vegetableWithName" class="com.pbasu.simple.Vegetable">
+				<property name="myName" value="Potato"/>
+			</bean>
+		</property>
+		<property name="meat">
+			<bean id="meatWithName" class="com.pbasu.simple.Meat">
+				<property name="myName" value="Lamb"/>
+			</bean>
+		</property>
+		<property name="dairy">
+			<bean id="dairyWithName" class="com.pbasu.simple.Dairy">
+				<property name="myName" value="Butter"/>
+			</bean>
+		</property>
+		<property name="grain">
+			<bean id="grainWithName" class="com.pbasu.simple.Grains">
+				<property name="myName" value="Wheat"/>
+			</bean>
+		</property>
+	</bean>
+	
+</beans>

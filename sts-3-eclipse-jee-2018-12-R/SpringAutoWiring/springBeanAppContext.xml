@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd"
+	default-autowire="constructor">
+
+<!-- Below set will not work with AutoWire ByName since the id do not match the name of expected properties
+	<bean id="vegetableMeal" class="com.pbasu.simple.Vegetable" />
+	<bean id="fruitsMeal" class="com.pbasu.simple.Fruits" />
+	<bean id="dairyMeal" class="com.pbasu.simple.Dairy" />
+	<bean id="grainsMeal" class="com.pbasu.simple.Grains" autowire-candidate="false"/>
+	<bean id="grainsMeal2" class="com.pbasu.simple.Grains"/>
+	<bean id="meatMeal" class="com.pbasu.simple.Meat" />
+ -->	
+	<!-- veg bean will not get autowired to mealAutoWiredByName -->
+	<bean id="veg" class="com.pbasu.simple.Vegetable" />
+	<bean id="fruit" class="com.pbasu.simple.Fruits" />
+	<bean id="dairy" class="com.pbasu.simple.Dairy" />
+	<bean id="grain" class="com.pbasu.simple.Grains"/>
+	<bean id="grain2" class="com.pbasu.simple.Grains" autowire-candidate="false"/>
+	<bean id="meat" class="com.pbasu.simple.Meat" />
+	
+	<bean id="meal" class="com.pbasu.simple.Meal">
+		<property name="fruit" ref="fruit" />
+		<property name="vegetable" ref="veg" />
+		<property name="meat" ref="meat" />
+		<property name="dairy" ref="dairy" />
+		<property name="grain" ref="grain" />
+	</bean>
+	
+	<bean id="mealAutoWiredByType" class="com.pbasu.simple.Meal" autowire="byType"/>
+	<bean id="mealAutoWiredByName" class="com.pbasu.simple.Meal" autowire="byName"/>
+	<bean id="mealAutoWiredByConstructor" class="com.pbasu.simple.Meal" autowire="constructor"/>
+	<bean id="mealAutoWiredUsingDefaultAutoWiringMode" class="com.pbasu.simple.Meal"/>
+
+</beans>

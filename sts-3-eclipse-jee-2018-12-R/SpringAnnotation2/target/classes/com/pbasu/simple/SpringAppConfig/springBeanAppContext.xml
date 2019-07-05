@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<context:annotation-config/>
+	
+	<bean id="smallTire" class="com.pbasu.simple.car.SmallTire">
+		<qualifier value="sTire"/>
+	</bean>
+	<bean id="bigTire" class="com.pbasu.simple.car.BigTire">
+		<qualifier value="bTire"/>
+	</bean>
+	<bean id="fourCyl" class="com.pbasu.simple.car.FourCylinderEngine">
+		<qualifier value="fourCylinider"/>
+	</bean>
+	<bean id="sixCyl" class="com.pbasu.simple.car.SixCylinderEngine">
+		<qualifier value="sixCylinider"/>
+	</bean>
+	
+<!-- 	<bean id="familyCar" class="com.pbasu.simple.car.FamilyCar"> -->
+<!-- 		<property name="frontLeft" ref="smallTire"/> -->
+<!-- 		<property name="frontRight" ref="smallTire"/> -->
+<!-- 		<property name="rearLeft" ref="bigTire"/> -->
+<!-- 		<property name="rearRight" ref="bigTire"/> -->
+<!-- 		<property name="engineType" ref="fourCyl"/> -->
+<!-- 	</bean> -->
+
+	<bean id="altFamilyCar" class="com.pbasu.simple.car.FamilyCar"/>
+	<bean id="altWeekendCar" class="com.pbasu.simple.car.WeekendCar"/>
+	
+	<bean id="requiredDescriptionFruit" class="com.pbasu.simple.car.requiredAnnotation.Fruits">
+		<!-- disabled below line to see effect of @Required annotation -->
+		<property name="description" value="Required description Set for FRUIT"/>
+	</bean>
+</beans>

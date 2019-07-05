@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<context:annotation-config/>
+	
+<!-- 	<bean id="veg" class="com.pbasu.simple.Vegetable" /> -->
+	<bean id="fruit" class="com.pbasu.simple.Fruits" />
+	<bean id="dairy" class="com.pbasu.simple.Dairy" />
+	<bean id="grain" class="com.pbasu.simple.Grains"/>
+	<bean id="grain2" class="com.pbasu.simple.Grains"/> <!-- this is not supposed to work -->
+	<!-- 
+	<bean id="grain" class="com.pbasu.simple.Grains"/>
+	<bean id="grain2" class="com.pbasu.simple.Grains" autowire-candidate="false"/>
+	-->
+	<bean id="meat" class="com.pbasu.simple.Meat" />
+	
+	<bean id="mealByAnnotation" class="com.pbasu.simple.Meal"/>
+	<bean id="mealByAnnotationAutowireConstructor" class="com.pbasu.simple.Meal"/>
+	
+	<bean id="fruitValueFromXml" class="com.pbasu.simple.Fruits">
+		<property name="description" value="Value set from Spring Bean Application Context XMl"/>
+	</bean>
+	<bean id="fruitValueFromValueAnnotation" class="com.pbasu.simple.Fruits" />
+
+</beans>

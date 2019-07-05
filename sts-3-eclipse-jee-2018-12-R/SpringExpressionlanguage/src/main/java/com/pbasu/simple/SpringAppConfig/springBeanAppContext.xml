@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<bean id="fruitNoSPEL" class="com.pbasu.simple.spel.xml.Fruit">
+		<property name="name" value="Shimla + type apple"/>
+	</bean>
+	
+	<bean id="fruitHardCodedSPEL" class="com.pbasu.simple.spel.xml.Fruit">
+		<property name="name" value="#{'Shimla' + 'type apple'}"/>
+	</bean>
+	
+	<bean id="fruitFromDataSourceSPEL" class="com.pbasu.simple.spel.xml.Fruit">
+		<property name="name" value="#{demoDataSource.getAppleType() + ' apple'}"/>
+	</bean>
+	
+	<bean id="fruitFromStaticDataSourceSPEL" class="com.pbasu.simple.spel.xml.Fruit">
+		<property name="name" value="#{T(com.pbasu.simple.spel.xml.DataSource).getAppleTypeStatic() + ' apple'}"/>
+	</bean>
+	
+	<bean id="fruitFromStaticDataSourceMultiplePropertySPEL" class="com.pbasu.simple.spel.xml.Fruit">
+		<property name="name" value="#{T(com.pbasu.simple.spel.xml.DataSource).getAppleTypeStatic() + ' apple'}"/>
+		<property name="nutrition" value="#{T(java.lang.Math).random() * 10}"/>
+	</bean>
+	
+	<bean id="demoDataSource" class="com.pbasu.simple.spel.xml.DataSource"></bean>
+</beans>
