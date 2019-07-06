@@ -80,3 +80,39 @@ dependencies {
 * 
 * 
 * 
+
+
+
+* https://www.theserverside.com/tutorial/Spring-MVC-tutorial-How-Spring-Boot-aids-Java-web-development
+* https://medium.com/@gustavo.ponce.ch/spring-boot-spring-mvc-spring-security-mysql-a5d8545d837d
+* https://github.com/gustavoponce7/spring-login
+* https://www.onlinetutorialspoint.com/spring-boot/spring-boot-mvc-example-tutorials.html
+* https://howtodoinjava.com/spring-boot2/spring-boot-mockmvc-example/
+* https://howtodoinjava.com/java-concurrency-tutorial/
+* https://www.springboottutorial.com/creating-web-application-with-spring-boot
+* JHipster
+* https://www.jhipster.tech/
+* https://github.com/jhipster
+* https://sling.apache.org/
+* https://stackoverflow.com/questions/17018266/what-is-the-purpose-behind-building-of-apache-sling-felix-jackrabbit-projects
+* https://pivot.apache.org/
+* https://www.baeldung.com/jhipster
+* https://en.wikipedia.org/wiki/JHipster
+* https://www.youtube.com/watch?v=-VQ_SVkaXbs
+* https://www.youtube.com/watch?v=5GMzVQIovOc
+* https://github.com/bkielczewski/example-spring-boot-mvc
+* https://github.com/eugenp/tutorials/tree/master/spring-boot-mvc
+* https://github.com/cristianprofile/spring-boot-mvc-complete-example
+* https://github.com/bkielczewski/example-spring-boot-mvc/projects
+* https://github.com/yevheniyJ/springboot
+* https://github.com/in28minutes/spring-boot-examples/tree/master/spring-boot-web-application
+* https://github.com/zianwar/springboot-crud-demo
+* https://github.com/mmeany/spring-boot-web-mvc
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
