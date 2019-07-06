@@ -108,6 +108,30 @@ dependencies {
 * https://github.com/in28minutes/spring-boot-examples/tree/master/spring-boot-web-application
 * https://github.com/zianwar/springboot-crud-demo
 * https://github.com/mmeany/spring-boot-web-mvc
+* https://github.com/in28minutes/SpringBootWebApplicationStepByStep
+* https://github.com/techieeupload/SpringBootWebApplicationStepByStep
+* https://github.com/springframeworkguru/springbootwebapp
+* https://github.com/matusaurio/springbootwebapp
+* https://github.com/julianjupiter/springbootwebapp
+* https://github.com/Bajunk/springbootwebapp
+* https://github.com/Rednirus/SpringBootWebApp
+* https://github.com/batchunaveen/SpringbootWebApp
+* https://www.springboottutorial.com/creating-rest-service-with-spring-boot
+* https://developer.okta.com/blog/2018/09/26/build-a-spring-boot-webapp
+* https://dzone.com/articles/secure-your-spring-boot-web-app-with-spring-securi
+* https://github.com/Romeh/spring-boot-sample-app
+* https://github.com/spring-projects/spring-petclinic
+* https://github.com/springframeworkguru/springbootwebapp
+* https://github.com/in28minutes/spring-boot-examples
+* https://github.com/mtedone/spring-boot-web
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
 * 
 * 
 * 
