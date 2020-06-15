@@ -8,7 +8,7 @@
 Also covers annotations to configure Init &amp; Destroy methods.</description>
   
   	<properties>
-  		<springVersion>4.0.0.RELEASE</springVersion>
+  		<springVersion>5.2.7.RELEASE</springVersion>
   		<!-- <springVersion>4.0.0.RELEASE</springVersion> -->
   		<!-- <springVersion>5.1.4.RELEASE</springVersion> -->
   	</properties>
