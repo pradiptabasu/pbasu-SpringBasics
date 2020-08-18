@@ -139,4 +139,48 @@ dependencies {
 * 
 * 
 * 
+* https://www.sipios.com/blog-tech/how-to-use-logj-and-mdc-in-java-spring-boot-application
+
+
+
+# Spring InitializingBean
+* https://mkyong.com/spring/spring-initializingbean-and-disposablebean-example/
+* https://dzone.com/articles/spring-bean-life-cycle-spring-initializingbean-and-1
+* https://blog.imaginea.com/spring-bean-creation-is-not-thread-safe/
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+
+
+
+# Soring and Threads
+* https://dzone.com/articles/multi-threading-in-spring-boot-using-completablefu
+* https://dzone.com/articles/spring-and-threads-taskexecutor
+* https://mkyong.com/spring/spring-and-java-thread-example/
+* https://medium.com/@swathisprasad/multi-threading-in-spring-boot-using-completablefuture-a7ca68a0fe48
+* https://blog.imaginea.com/spring-bean-creation-is-not-thread-safe/
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+
+
+
+# Spring Security Context Propagation with @Async
+* https://www.baeldung.com/spring-security-async-principal-propagation
+* https://www.baeldung.com/spring-async
+* https://stackoverflow.com/questions/23732089/how-to-enable-request-scope-in-async-task-executor
+* 
+* 
+* 
+* 
+* 
 * 
