@@ -7,7 +7,7 @@
   <description>Customize Component Scanner so that Spring picks up our custom annotation to generate beans from them</description>
   
   	<properties>
-		<springVersion>4.0.0.RELEASE</springVersion>
+		<springVersion>5.3.19</springVersion>
 		<!-- <springVersion>4.0.0.RELEASE</springVersion> -->
 		<!-- <springVersion>5.1.4.RELEASE</springVersion> -->
 	</properties>
