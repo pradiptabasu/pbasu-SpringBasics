@@ -6,7 +6,7 @@
   <name>SpringAOP-Annotations</name>
   <description>SpringAOP-Annotations</description>
 	<properties>
-		<springVersion>4.0.0.RELEASE</springVersion>
+		<springVersion>5.2.22.RELEASE</springVersion>
 		<!-- <springVersion>4.0.0.RELEASE</springVersion> -->
 		<!-- <springVersion>5.1.4.RELEASE</springVersion> -->
 	</properties>
