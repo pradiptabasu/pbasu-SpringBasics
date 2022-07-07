@@ -6,7 +6,7 @@
   <name>SpringAOP-Advice</name>
   <description>SpringAOP-Advice</description>
 	<properties>
-		<springVersion>4.0.0.RELEASE</springVersion>
+		<springVersion>5.2.21.RELEASE</springVersion>
 		<!-- <springVersion>4.0.0.RELEASE</springVersion> -->
 		<!-- <springVersion>5.1.4.RELEASE</springVersion> -->
 	</properties>
